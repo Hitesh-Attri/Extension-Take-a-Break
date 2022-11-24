@@ -1,13 +1,18 @@
 {
-    "name": "Take-A-Break",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "browser_action": { 
+    "name": "Take - A - Break!",
+    "description": "Whats the 20-20-20 rule? \n If you find yourself gazing at screens all day, your eye doctor may have mentioned this rule to you. Basically, every 20 minutes spent using a screen; you should try to look away at something that is 20 feet away from you for a total of 20 seconds.\n It takes about 20 seconds for your eyes to completely relax.\n While you're resting your eyes, its also a good idea to get up and grab a drink of water to keep yourself hydrated. If your body is hydrated, your eyes will be as well.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "notifications",
+        "storage",
+        "alarms"
+    ],
+    "action": {
         "default_popup": "popup.html",
         "default_icon": "logo.png"
-    },
-    "icons": {
-            "128": "logo.png"
-    },
-    "permissions": ["activeTab"]
+    }
 }
